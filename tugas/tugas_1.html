@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .content {
+            text-align: center;
+            width: 75%;
+            padding: 12px;
+        }
+        .content>*{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .profil>*{
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: xx-large;
+        }
+        .container-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            background-color: rgb(7, 124, 170);
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        img{
+            width: 200px;
+            position: absolute;
+        }
+        aside{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 12px;
+        }
+        aside>div:first-child{
+            font-size: 26px;
+        }
+        textarea{
+            resize: none;
+        }
+        @media screen and (min-width : 760px){
+            img {
+                width: auto;
+            }
+            .circle{
+                width: 350px;
+                height: 350px;
+            }
+            main{
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <section class="profil">
+                <div class="container-img">
+                    <div class="circle"></div>
+                    <img src="foto.png" alt="Foto Lutfi">
+                </div>
+                <h1>Lutfi Nur Rohman</h1>
+            </section>
+            <section class="desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nam doloribus nemo expedita at minima sunt reiciendis totam exercitationem dolore quam officia dignissimos laborum perferendis fugiat excepturi modi hic, veritatis illum. Sint iusto repellendus, illo unde beatae in dolores ab quis quo quisquam veritatis, modi sed doloremque explicabo ad distinctio?</p>
+            </section>
+        </div>    
+        <aside>
+            <div>Contact Me</div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <textarea name="message" id="message" cols="24" rows="20" placeholder="Enter Your Message"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+</html>
